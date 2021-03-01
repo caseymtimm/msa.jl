@@ -1,0 +1,24 @@
+---
+title: Gage Worksheet
+author: Casey Timm
+date: 27th Feburary 2021
+---
+
+```julia; echo = false
+    using Latexify
+
+    data = WEAVE_ARGS.data
+
+    return nothing
+```
+
+# Data
+```julia, echo = false
+latexify(unstack(data, :Part, :Value))
+```
+
+# Anova Table
+```julia, echo = false, results = "markdown"
+
+
+```
