@@ -8,7 +8,7 @@ data = CSV.File("./testdata.csv") |> DataFrame
 p = 5.15
 α = 0.25
 
-anova, τ², γ², ω², σ², RR, significant, precent_study_variation, precent_contribution = gage(data, p, α)
+anova, τ², γ², ω², σ², RR, TV, significant, precent_study_variation, precent_contribution = gage(data, p, α)
 
 @testset "Anova Table" begin
     @testset "Degrees of Freedom (DF)" begin
@@ -33,6 +33,7 @@ anova, τ², γ², ω², σ², RR, significant, precent_study_variation, precent
 end
 
 @testset "Results" begin
+    @test round(TV, digits=2) == 1.05
     @testset "Estimate of Variance" begin
         @test round(τ², digits=5) == 0.00129
         @test round(γ², digits=5) == 0.00223

@@ -76,7 +76,7 @@ function gage(data, p, α)
 
     precent_repeatability_variation = 100 * ((p * sqrt(τ²)) / (p * TV))
 
-    anova, τ², γ², ω², σ², RR, significant
+    anova, τ², γ², ω², σ², RR, TV, significant
 
 end
 
