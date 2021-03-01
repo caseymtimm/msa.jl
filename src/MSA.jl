@@ -75,19 +75,19 @@ function gage(data, p, α)
     TV = sqrt(RR^2 + PV^2)
 
     precent_study_variation = (
-        repeatability = 100 * (p * sqrt * (τ²) / TV),
-        operator = 100 * (p * sqrt * (ω²) / TV),
-        interaction = 100 * (p * sqrt * (γ²) / TV),
-        rr = 100 * (p * sqrt * (RR) / TV),
-        part = 100 * (p * sqrt * (σ²) / TV),
+        repeatability = 100 * (p * sqrt(τ²) / TV),
+        operator = 100 * (p * sqrt(ω²) / TV),
+        interaction = 100 * (p * sqrt(γ²) / TV),
+        rr = 100 * (p * sqrt(RR) / TV),
+        part = 100 * (p * sqrt(σ²) / TV),
     ) 
 
     precent_contribution = (
-        repeatability = 100 * (p * sqrt * (τ²) / TV)^2,
-        operator = 100 * (p * sqrt * (ω²) / TV)^2,
-        interaction = 100 * (p * sqrt * (γ²) / TV)^2,
-        rr = 100 * (p * sqrt * (RR) / TV)^2,
-        part = 100 * (p * sqrt * (σ²) / TV)^2,
+        repeatability = 100 * (p * sqrt(τ²) / TV)^2,
+        operator = 100 * (p * sqrt(ω²) / TV)^2,
+        interaction = 100 * (p * sqrt(γ²) / TV)^2,
+        rr = 100 * (p * sqrt(RR) / TV)^2,
+        part = 100 * (p * sqrt(σ²) / TV)^2,
     ) 
 
 
