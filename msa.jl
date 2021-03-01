@@ -63,7 +63,7 @@ anova_table = DataFrame(
 
 f_table = FDist(DFop, DFe)
 
-critical_value = quantile(d, 1 - α)
+critical_value = quantile(f_table, 1 - α)
 
 significant = f > critical_value
 
