@@ -70,9 +70,9 @@ function gage(data, p, α)
 
     RR = τ² + γ² + ω²
 
-    PV = p * sqrt((MSp - MSop) / (k * r))
+    PV = p * sqrt(σ²)
 
-    TV = sqrt(RR^2 + PV^2)
+    TV = sqrt((p * sqrt(RR))^2 + PV^2)
 
     precent_study_variation = (
         repeatability = 100 * (p * sqrt(τ²) / TV),
@@ -80,7 +80,7 @@ function gage(data, p, α)
         interaction = 100 * (p * sqrt(γ²) / TV),
         rr = 100 * (p * sqrt(RR) / TV),
         part = 100 * (p * sqrt(σ²) / TV),
-    ) xcv 
+    ) 
 
     precent_contribution = (
         repeatability = 100 * (p * sqrt(τ²) / TV)^2,
