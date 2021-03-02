@@ -80,7 +80,7 @@ function gage(data, p, α)
         interaction = 100 * (p * sqrt(γ²) / TV),
         rr = 100 * (p * sqrt(RR) / TV),
         part = 100 * (p * sqrt(σ²) / TV),
-    ) 
+    ) xcv 
 
     precent_contribution = (
         repeatability = 100 * (p * sqrt(τ²) / TV)^2,
