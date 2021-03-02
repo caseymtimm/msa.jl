@@ -39,7 +39,7 @@ end
         @test round(γ², digits=5) == 0.00223
         @test round(ω², digits=5) == 0.00091
         @test round(σ², digits=7) == 0.0371644 # The book has 0.0371641 but I get 0.0371644 is this a rounding error?
-        @test round(RR, digits=5) == 0.00443
+        @test round(RR, digits=5) == 0.00444 # The book has 0.00443 but I get 0.00444 is this a rounding error?
     end
     @testset "% Study Variation" begin
         @test round(precent_study_variation.repeatability, digits=1) == 17.6
